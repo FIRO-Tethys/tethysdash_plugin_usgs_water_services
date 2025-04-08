@@ -37,6 +37,7 @@ def plot_data(plot_name, data):
             time_series = data['value']['timeSeries']
             scatter_plots = []
             for time_serie in time_series:
+                site_code = time_serie['sourceInfo']['siteCode'][0]['value']
                 values = time_serie['values'][0]['value']
                 y_data = [float(x['value']) for x in values]
                 x_data = [x['dateTime'] for x in values]
@@ -44,6 +45,7 @@ def plot_data(plot_name, data):
                 option = time_serie['variable']['options']['option'][0]
                 if 'value' in option:
                     name = f'{name} ({option["value"]})'
+                name = f'{name} (Site {site_code})'
                 scatter_plots.append(
                     go.Scatter(x=x_data, y=y_data, name=name)
                 )
