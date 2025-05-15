@@ -15,6 +15,7 @@ setup(
     entry_points={
         "intake.drivers": [
             "usgs_plots = usgs_visualizations.plots:Plots",
+            "usgs_map = usgs_visualizations.map:Map",
         ]
     },
     package_data={"": ["*.csv", "*.yml", "*.html"]},
