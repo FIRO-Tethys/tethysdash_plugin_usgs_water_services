@@ -6,7 +6,7 @@ from .utils import get_data, plot_data
 class Plots(base.DataSource):
     container = "python"
     version = "0.0.1"
-    name = "geoglows_plots"
+    name = "usgs_plots"
     visualization_args = {
         "plot_name": [
             {"value": "iv", "label": "Instantaneous Values Service"},
