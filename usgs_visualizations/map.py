@@ -5,6 +5,8 @@ class Map(base.DataSource):
     container = "python"
     version = "0.0.1"
     name = "usgs_map"
+    visualization_description = ("Map for USGS Stream Gauges")
+    visualization_tags = ["map", "USGS", "stream"]
     visualization_args = {}
     visualization_group = "USGS Water Services"
     visualization_label = "USGS Water Services Map"

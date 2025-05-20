@@ -7,6 +7,12 @@ class Plots(base.DataSource):
     container = "python"
     version = "0.0.1"
     name = "usgs_plots"
+    visualization_description = (
+        "Plot data from USGS Water Services for selected sites and period"
+    )
+    visualization_tags = [
+        "map", "USGS", "water"
+    ]
     visualization_args = {
         "plot_name": [
             {"value": "iv", "label": "Instantaneous Values Service"},
