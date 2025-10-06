@@ -11,6 +11,7 @@ class Map(base.DataSource):
     visualization_group = "USGS Water Services"
     visualization_label = "USGS Water Services Map"
     visualization_type = "map"
+    visualization_attribution = "USGS"
     _user_parameters = []
 
     def __init__(self, metadata=None, **kwargs):
