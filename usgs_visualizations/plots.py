@@ -32,6 +32,7 @@ class Plots(base.DataSource):
     visualization_group = "USGS Water Services"
     visualization_label = "USGS Water Services Plots"
     visualization_type = "plotly"
+    visualization_attribution = "USGS"
     _user_parameters = []
 
     def __init__(self, plot_name, sites, period, metadata=None):
