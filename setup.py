@@ -18,7 +18,11 @@ setup(
             "usgs_map = usgs_visualizations.map:Map",
         ]
     },
-    package_data={"": ["*.csv", "*.yml", "*.html"]},
+    package_data={
+        "usgs_visualizations": [
+            "static/*",
+        ]
+    },
     include_package_data=True,
     install_requires=INSTALL_REQUIRES,
     long_description=open("README.md").read(),
